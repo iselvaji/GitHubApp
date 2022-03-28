@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    ext.lifecycle_version = '2.4.1'
+    ext.material_version = '1.5.0'
+    ext.recyclerview_version = '1.2.1'
+    ext.coroutineVersion = '1.5.2'
+    ext.navigation_version = '2.4.1'
+    ext.retrofit_version = '2.9.0'
+    ext.moshi_version = '1.12.0'
+    ext.daggerHiltVersion = '2.41'
+    ext.hiltLifeCycleVersion = '1.0.0-alpha03'
+    ext.coilVersion = '0.9.1'
+    ext.paging_version = "3.1.1"
+    ext.ktxVersion = '1.4.0'
+    ext.ktxFragmentVersion = '1.4.1'
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$daggerHiltVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation_version"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

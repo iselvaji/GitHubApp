@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_margin="@dimen/dim_8"
+    android:elevation="@dimen/dim_8"
+    app:cardCornerRadius="@dimen/dim_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgUser"
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_80"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/dim_10" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            style="@style/textTitle"
+            android:maxLines="2"
+            android:layout_marginStart="@dimen/dim_5"
+            android:layout_marginBottom="@dimen/dim_5"
+            app:layout_constraintStart_toEndOf="@id/imgUser"
+            app:layout_constraintTop_toTopOf="@id/imgUser"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/followers"
+            style="@style/textContent"
+            android:layout_margin="@dimen/dim_5"
+            app:layout_constraintStart_toEndOf="@id/imgUser"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

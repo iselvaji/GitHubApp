@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GitHubApp</string>
+    <string name="err_network">Network is unavailable. Please connect to network</string>
+    <string name="err_loading_refresh">Error while loading data. Please tap on refresh</string>
+    <string name="err_loading_data">Unable to load the details</string>
+    <string name="refresh">Refresh</string>
+    <string name="followers">%1$d Followers</string>
+    <string name="ok">OK</string>
+    <string name="search_by_username">Search by username..</string>
+    <string name="user_name">User Name</string>
+    <string name="retry">Retry</string>
+    <string name="err_no_results">No data found</string>
+</resources>
